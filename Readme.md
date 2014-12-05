@@ -24,4 +24,4 @@ If no output file is specified as an argument then the output is piped to stdout
 
 # Commands
 
-**[jsonfilter](http://godoc.org/github.com/dschnare/jsonfilter)** - Package main exposes a command line tool to filter string values found in JSON data.
+**[jsonfilter](http://godoc.org/github.com/dschnare/jsonfilter)** - Jsonfilter implements a command line tool to filter string values found in JSON data.
