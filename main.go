@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 /*
-Package main exposes a command line tool to filter string values found in JSON data.
+Jsonfilter implements a command line tool to filter string values found in JSON data.
 Use `jsonfilter --help` for details about each command line argument.
 
 This tool supports standard in piping of a JSON file contents. If

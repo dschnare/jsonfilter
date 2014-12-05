@@ -1,6 +1,6 @@
 COMMAND DOCUMENTATION
 
-    Package main exposes a command line tool to filter string values found
+    Jsonfilter implements a command line tool to filter string values found
     in JSON data. Use `jsonfilter --help` for details about each command
     line argument.
 
