@@ -15,7 +15,7 @@ For example, to convert lowercase characters to uppercase:
 
   "tr '[:lower:]' '[:upper:]'"
 
-Optionally you can override how filters are run by calling *WithFilterRunner(). By default the filter runner
+Optionally you can override how filters are run by calling **WithFilterRunner(). By default the filter runner
 will run each filter as a command on the command line. You can use a custom filter runner to define a filter
 language of your own or use it to mock out a test.
 
