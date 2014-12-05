@@ -16,6 +16,8 @@ See the [filter package](filter) for more details on filtering.
 
 If no JSON is specified as an argument then it is expected to be piped into stdin.
 
+If no output file is specified as an argument then the output is piped to stdout.
+
 # Packages
 
 **[filter](filter)** - Package filter implements a JSON filter that filters all string values found in JSON data.
