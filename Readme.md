@@ -1,3 +1,5 @@
+[![GoDoc](https://godoc.org/github.com/dschnare/jsonfilter?status.svg)](https://godoc.org/github.com/dschnare/jsonfilter)
+
 # Overview
 
 Jsonfilter exposes a Go packge and a command line tool for filter string values found in JSON data.
