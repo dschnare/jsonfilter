@@ -1,0 +1,14 @@
+{
+	"a": "Hello World!",
+	"size": 27,
+	"counts": [2, 4, 56, 7],
+	"b": {
+		"c": "This is a line of text",
+		"age": 35,
+		"d": [
+			"This is some text",
+			"So is this",
+			"SOME TEXT"
+		]
+	}
+}

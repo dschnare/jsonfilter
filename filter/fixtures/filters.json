@@ -1,0 +1,7 @@
+{
+	"a": "upper",
+	"b": {
+		"c": "lower",
+		"d": ["title", "custom"]
+	}
+}
