@@ -21,3 +21,5 @@ If no output file is specified as an argument then the output is piped to stdout
 # Packages
 
 **[filter](filter)** - Package filter implements a JSON filter that filters all string values found in JSON data.
+
+**[main](jsonfilter.txt)** - Package main exposes a command line tool to filter string values found in JSON data.
