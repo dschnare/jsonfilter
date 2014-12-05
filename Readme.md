@@ -14,6 +14,8 @@ Jsonfilter exposes a Go packge and a command line tool for filter string values 
 Where `filter` can either be a command to use to filter all string values or a path to a JSON file.
 See the [filter package](filter) for more details on filtering.
 
+If no JSON is specified as an argument then it is expected to be piped into stdin.
+
 # Packages
 
 **[filter](filter)** - Package filter implements a JSON filter that filters all string values found in JSON data.
