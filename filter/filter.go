@@ -1,3 +1,7 @@
+// Copyright 2014 Darren Schnare. All rights reserved.
+// Use of this source code is governed by the MIT
+// license that can be found in the LICENSE file.
+
 /*
 Package filter implements a JSON filter that filters all string values found in JSON data.
 A filter can be specified at the command line or as a JSON file. If a JSON file is specified then
