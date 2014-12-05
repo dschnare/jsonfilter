@@ -9,6 +9,13 @@ Use `jsonfilter --help` for details about each command line argument.
 This tool supports standard in piping of a JSON file contents. If
 the `--output` argument is not specified then output will be piped to
 standard out.
+
+  jsonfilter "json to filter" | jsonfilter [help|/?]
+    -filter="": The filter(s) to apply to the strings contained in the JSON file.
+    -help=false: Show the help message.
+    -output="": The output file to write to.
+    -pretty=false: Print JSON result with indentation. (shorthand)
+    -pretty-print=false: Print JSON result with indentation.
 */
 package main
 
