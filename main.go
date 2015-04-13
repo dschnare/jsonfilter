@@ -10,7 +10,7 @@ This tool supports standard in piping of a JSON file contents. If
 the `--output` argument is not specified then output will be piped to
 standard out.
 
-  jsonfilter "json to filter" | jsonfilter [help|/?]
+  jsonfilter "json to filter" | jsonfilter "file.json" | jsonfilter [help|/?]
     -filter="": The filter(s) to apply to the strings contained in the JSON file.
     -help=false: Show the help message.
     -output="": The output file to write to.
@@ -23,6 +23,7 @@ import (
   "flag"
   "os"
   "io"
+  "strings"
   "bytes"
   "fmt"
   "bufio"
@@ -77,6 +78,16 @@ func init() {
     os.Exit(0)
   } else if len(flag.Args()) == 1 {
     jsontext = flag.Arg(0)
+    if strings.HasSuffix(jsontext, ".json") {
+      file,err := os.Open(jsontext)
+      if err != nil {
+        fmt.Printf("Failed to read from file :: %v\n", err.Error())
+        os.Exit(1)
+      } else if jsontext,err = readFile(file); err != nil {
+        fmt.Printf("Failed to read from file :: %v\n", err.Error())
+        os.Exit(1)
+      }
+    }
   } else {
     if isPiped(os.Stdin) {
       var err error
@@ -111,7 +122,7 @@ func main() {
       panic(err)
     }
   } else {
-    panic(err)   
+    panic(err)
   }
 }
 

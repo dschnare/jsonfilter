@@ -14,7 +14,6 @@ Jsonfilter exposes a Go packge and a command line tool for filter string values 
 		-pretty-print=false: Print JSON result with indentation.
 
 Where `filter` can either be a command to use to filter all string values or a path to a JSON file.
-See the [filter package](http://godoc.org/github.com/dschnare/jsonfilter/filter) for more details on filtering.
 
 If no JSON is specified as an argument then it is expected to be piped into stdin.
 
@@ -33,12 +32,12 @@ For example, to convert lowercase characters to uppercase:
 
 	"tr '[:lower:]' '[:upper:]'"
 
-Optionally you can override how filters are run by calling **WithFilterRunner(). By default the filter runner
+Optionally you can override how filters are run by calling **WithFilterRunner()**. By default the filter runner
 will run each filter as a command on the command line. You can use a custom filter runner to define a filter
 language of your own or use it to mock out a test.
 
 To specify unique filters for specific JSON paths you can use a JSON file.
-	
+
 	// filter.json
 	{
 	"a": "tr '[:lower:]' '[:upper:]'"
